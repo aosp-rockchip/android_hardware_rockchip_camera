@@ -281,7 +281,7 @@ LOCAL_SHARED_LIBRARIES += \
     android.hardware.graphics.allocator@2.0 \
     android.hardware.graphics.allocator@3.0 \
     android.hardware.graphics.allocator@4.0 \
-    android.hardware.graphics.common-ndk_platform \
+    android.hardware.graphics.common-V2-ndk_platform \
     android.hardware.graphics.common@1.2 \
     android.hardware.graphics.mapper@2.0 \
     android.hardware.graphics.mapper@2.1 \
@@ -292,7 +292,7 @@ LOCAL_SHARED_LIBRARIES += \
 
 LOCAL_HEADER_LIBRARIES += \
     android.hardware.graphics.common@1.2 \
-    android.hardware.graphics.common-ndk_platform \
+    android.hardware.graphics.common-V2-ndk_platform \
     android.hardware.graphics.mapper@4.0 \
     libgralloctypes
 endif
