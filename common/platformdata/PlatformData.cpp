@@ -430,14 +430,14 @@ static int construct_thumbnail_sizes_metadata(
 	array_size = sizeof(resolution_array) / sizeof(int) / 2;
 	pic_width = pMetaInfo->full_size.width;
 	pic_height = pMetaInfo->full_size.height;
-	for(int i = 0; i < array_size; i++){
-		if ((pMetaInfo->full_size.width >= resolution_array[i][0]) &&
-			(pMetaInfo->full_size.height >= resolution_array[i][1])){
-			pic_width = resolution_array[i][0];
-			pic_height = resolution_array[i][1];
+//	for(int i = 0; i < array_size; i++){
+		if ((pMetaInfo->full_size.width >= resolution_array[0][0]) &&
+			(pMetaInfo->full_size.height >= resolution_array[0][1])){
+			pic_width = resolution_array[0][0];
+			pic_height = resolution_array[0][1];
 		}
-		break;
-	}
+//		break;
+//	}
 
 	ratio = (float)pic_width / (float)pic_height;
 	max_h = MAX_THUMBSIZE_W / ratio;
